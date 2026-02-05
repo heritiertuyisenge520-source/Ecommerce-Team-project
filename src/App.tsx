@@ -2,6 +2,8 @@ import { TopBanner } from './components/TopBanner';
 import { Header } from './components/Header';
 import { Navigation } from './components/Navigation';
 import { HeroSection } from './components/HeroSection';
+import { TrendingSection } from './components/TrendingSection';
+import { BestSellersSection } from './components/BestSellersSection';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Header />
       <Navigation />
       <HeroSection />
+      <TrendingSection />
+      <BestSellersSection />
     </div>
   );
 }

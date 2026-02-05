@@ -11,7 +11,7 @@ export function TopBanner() {
         
         <div className="flex items-center gap-2 text-muted-foreground">
           <Truck className="w-4 h-4 text-orange-500" />
-          <span className="body-small font-medium">Free to orders over $50</span>
+          <span className="body-small font-medium">Free to visit over RWF 50,000</span>
         </div>
         
         <div className="flex items-center gap-4">

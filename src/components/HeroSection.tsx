@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { Search } from 'lucide-react';
 import { ProductCard } from './ProductCard';
 
@@ -38,7 +37,7 @@ export function HeroSection() {
                   </svg>
                 </div>
                 <div>
-                  <div className="font-semibold body-normal">Free Shipping</div>
+                  <div className="font-semibold body-normal">Free to visit</div>
                 </div>
               </div>
               
@@ -76,9 +75,9 @@ export function HeroSection() {
             <ProductCard
               image="https://images.pexels.com/photos/11112735/pexels-photo-11112735.jpeg"
               title="Premium Wireless Headphones"
-              price={299}
-              originalPrice={399}
-              badge="Best Seller"
+              price={299000}
+              originalPrice={399000}
+              badge={{ text: "Best Seller", variant: "trending" }}
               imageAlt="Modern wooden accent chair by Ksenia Chernaya on Pexels"
             />
             
@@ -90,7 +89,7 @@ export function HeroSection() {
                   alt="Stylish glasses by Chillsoffear on Pixabay"
                   className="w-full h-20 object-contain mb-2"
                 />
-                <div className="text-center font-semibold body-small">$89</div>
+                <div className="text-center font-semibold body-small">RWF 89,000</div>
               </div>
               
               <div className="flex-1 bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
@@ -99,7 +98,7 @@ export function HeroSection() {
                   alt="Elegant beige heels by José Martin Segura Benites on Pexels"
                   className="w-full h-20 object-contain mb-2"
                 />
-                <div className="text-center font-semibold body-small">$149</div>
+                <div className="text-center font-semibold body-small">RWF 149,000</div>
               </div>
             </div>
           </div>

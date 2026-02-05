@@ -12,6 +12,9 @@ A modern e-commerce homepage built with React, TypeScript, Tailwind CSS v4, and 
 - **Hero Section**: Large hero with featured product display
 - **Product Cards**: Interactive product cards with badges and pricing
 - **Feature Highlights**: Free shipping, quality guarantee, and 24/7 support badges
+- **Trending Collections**: Featured summer collection with large display card
+- **Category Grid**: Browse by category - Men's Wear, Kid's Fashion, Beauty Products, and Accessories
+- **Pastel Color Theme**: Beautiful pastel backgrounds for category cards
 
 ## Tech Stack
 
@@ -51,12 +54,14 @@ npm run preview
 ```
 src/
 ├── components/
-│   ├── ui/              # shadcn/ui components
-│   ├── TopBanner.tsx    # Top banner with contact & shipping info
-│   ├── Header.tsx       # Main header with logo, search & icons
-│   ├── Navigation.tsx   # Navigation menu
-│   ├── HeroSection.tsx  # Hero section with featured content
-│   └── ProductCard.tsx  # Reusable product card component
+│   ├── ui/                  # shadcn/ui components
+│   ├── TopBanner.tsx        # Top banner with contact & shipping info
+│   ├── Header.tsx           # Main header with logo, search & icons
+│   ├── Navigation.tsx       # Navigation menu
+│   ├── HeroSection.tsx      # Hero section with featured content
+│   ├── ProductCard.tsx      # Reusable product card component
+│   ├── TrendingSection.tsx  # Trending collections section
+│   └── CategoryCard.tsx     # Category card for browsing
 ├── lib/
 │   └── utils.ts         # Utility functions
 ├── App.tsx              # Main app component
@@ -67,19 +72,25 @@ src/
 
 ## Design Tokens
 
-The theme uses a neutral color palette with black and white as primary colors:
+The theme uses a neutral color palette with black and white as primary colors, complemented by pastel accents:
 
 - **Primary**: Black (for navigation, buttons)
 - **Background**: Light gray (#F9F9F9)
 - **Card**: White (#FFFFFF)
 - **Text**: Black for headings, gray for body text
 - **Accent**: Red badges for cart counters
+- **Pastel Colors**: 
+  - Purple (#F3E8FF) - Featured collection
+  - Blue (#E0F2FE) - Men's Wear
+  - Beige (#FEF3E2) - Kid's Fashion
+  - Pink (#FCE7F3) - Beauty Products
+  - Green (#DCFCE7) - Accessories
 
 ## Product Images
 
 All product images are sourced from:
-- Pexels (Ksenia Chernaya, José Miguel Nivar)
-- Pixabay (Chillsoffear)
+- **Pexels**: Ksenia Chernaya, José Martin Segura Benites, Artem Podrez, Duy's House of Photo, Ray Piedra, Fashion Needles
+- **Pixabay**: Chillsoffear
 
 ## Future Enhancements
 
