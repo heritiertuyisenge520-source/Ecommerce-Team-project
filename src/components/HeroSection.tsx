@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Search } from 'lucide-react';
 import { ProductCard } from './ProductCard';
+import { Link } from 'react-router-dom';
 
 export function HeroSection() {
   return (
@@ -10,21 +11,24 @@ export function HeroSection() {
           {/* Left Column - Hero Content */}
           <div>
             <h1 className="hero-heading mb-6">
-              Discover Amazing Products
+              Discover Local Businesses
             </h1>
             
             <p className="body-large text-muted-foreground mb-8 max-w-xl">
-              Explore our curated collection of premium items designed to enhance your lifestyle. 
-              From fashion to tech, find everything you need with exclusive deals and fast shipping.
+              Find products and promotions from local shops in your area. Support local businesses and discover amazing deals near you.
             </p>
             
             <div className="flex gap-4 mb-12">
-              <Button size="lg" className="h-12 px-8 text-base">
-                Shops
-              </Button>
-              <Button size="lg" variant="outline" className="h-12 px-8 text-base">
-                Browse Categories
-              </Button>
+              <Link to="/shops">
+                <Button size="lg" className="h-12 px-8 text-base">
+                  Shops
+                </Button>
+              </Link>
+              <Link to="/products">
+                <Button size="lg" variant="outline" className="h-12 px-8 text-base">
+                  Browse Products
+                </Button>
+              </Link>
             </div>
             
             {/* Feature Icons */}
